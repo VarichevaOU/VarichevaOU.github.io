@@ -1,29 +1,20 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greet()
+        {
+            alert("hello " + document.querySelector("#name").value) 
+        }
+    </script>
 </head>
 <body>
-    <img src="gerbtspu118.png"/>
-    <h1>ТГПУ</h1>
-    <ol>
-        <li>Русский</li>
-        <ul>
-            <li>Физика</li>
-            <li>Химия</li>
-        </ul>
-        <li>Китайский</li>
-    </ol>
-    
-    <H2>ИИЯМС</H2>
-    <P>Я учусь в  <a href="https://tspu.ru"> ТГПУ</a></P>
-    <iframe 
-    src="https://rutube.ru/play/embed/e9578de3440666b6399408f84ed3ae6b" 
-    width="560" 
-    height="315" 
-    frameborder="0" 
-    allowfullscreen>
-    </iframe>
-
+    <form onsubmit="greet(); return false;">
+        <input type="text" placeholder="Name" id="name">
+        <input type="submit">
+    </form>
 </body>
 </html>
